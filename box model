@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài tập Sử dụng Box Model 1</title>
+    <style>
+        /* Thuộc tính chung cho cả 3 thẻ .card */
+        .card {
+            width: 280px;
+            height: 150px;
+            padding: 20px;
+            border: 5px solid #3498db;
+            margin: 20px;
+        }
+
+        /* Thẻ 1: content-box + màu nền xanh lá */
+        .card:nth-child(1) {
+            box-sizing: content-box;
+            background-color: #2ecc71;
+        }
+
+        /* Thẻ 2: border-box + màu nền vàng */
+        .card:nth-child(2) {
+            box-sizing: border-box;
+            background-color: #f1c40f;
+        }
+
+        /* Thẻ 3: border-box + màu nền đỏ */
+        .card:nth-child(3) {
+            box-sizing: border-box;
+            background-color: #e74c3c;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <h3>Thẻ 1 (content-box)</h3>
+        <p>Đây là thẻ sử dụng thuộc tính content-box.</p>
+    </div>
+
+    <div class="card">
+        <h3>Thẻ 2 (border-box)</h3>
+        <p>Đây là thẻ sử dụng thuộc tính border-box.</p>
+    </div>
+
+    <div class="card">
+        <h3>Thẻ 3 (border-box)</h3>
+        <p>Đây là thẻ khác cũng sử dụng thuộc tính border-box.</p>
+    </div>
+
+</body>
+</html>
