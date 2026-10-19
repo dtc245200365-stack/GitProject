@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thực hành Bảng trong CSS</title>
+  <style>
+    /* Cấu hình tổng quan bảng và gộp đường viền */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-family: Arial, sans-serif;
+    }
+
+    /* Thiết lập đường viền và khoảng cách padding cho các ô */
+    table, th, td {
+      border: 1px solid #333;
+    }
+
+    th, td {
+      padding: 15px;
+    }
+
+    /* Định dạng cho ô tiêu đề (th) */
+    th {
+      height: 50px;
+      background-color: #333;
+      color: #ffffff;
+      text-align: left;
+      vertical-align: middle;
+    }
+
+    /* Định dạng cho ô dữ liệu (td) */
+    td {
+      background-color: #f2f2f2;
+      color: #333;
+      vertical-align: bottom;
+    }
+
+    /* Hiệu ứng đổi màu nhẹ khi rê chuột qua hàng */
+    tr:hover td {
+      background-color: #e2e2e2;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Bảng Danh Sách Học Viên</h2>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Họ tên</th>
+        <th>Tuổi</th>
+        <th>Lớp</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Nguyễn Văn A</td>
+        <td>20</td>
+        <td>Web</td>
+      </tr>
+      <tr>
+        <td>Trần Thị B</td>
+        <td>21</td>
+        <td>Web</td>
+      </tr>
+      <tr>
+        <td>Lê Văn C</td>
+        <td>22</td>
+        <td>Mobile</td>
+      </tr>
+    </tbody>
+  </table>
+
+</body>
+</html>
